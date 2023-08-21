@@ -1,5 +1,9 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import cloudflare from "@astrojs/cloudflare";
+export default {
+  adapter: cloudflare(),
+};
 
 export const locales = {
 	root: { label: 'English', lang: 'en' },
